@@ -10,7 +10,7 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex flex-col items-center justify-center pt-16 overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0 z-0">
-        <img src={teamPhoto} alt="Equipo BASARA" className="w-full h-full object-cover" />
+        <img src={teamPhoto} alt="Equipo BASARA" className="w-full h-full object-cover object-center md:object-top" />
         <div className="absolute inset-0 bg-gradient-to-b from-secondary/60 via-secondary/40 to-background" />
       </div>
 
