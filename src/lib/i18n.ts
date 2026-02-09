@@ -10,7 +10,7 @@ export const translations = {
     candidates: { es: 'Candidatos', eu: 'Hautagaiak', en: 'Candidates' },
   },
   hero: {
-    title: { es: 'BASARA BAGARA', eu: 'BASARA BAGARA', en: 'BASARA BAGARA' },
+    title: { es: 'BAGARA', eu: 'BAGARA', en: 'BAGARA' },
     subtitle: { es: 'zurekin', eu: 'zurekin', en: 'with you' },
     tagline: {
       es: 'Menos quejas en el café y más soluciones en la mesa.',
