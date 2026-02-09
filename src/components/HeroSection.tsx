@@ -1,6 +1,6 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/lib/i18n';
-import teamPhoto from '@/assets/team-photo.jpg';
+import teamPhoto from '@/assets/team-group.jpg';
 
 const HeroSection = () => {
   const { lang } = useLanguage();
