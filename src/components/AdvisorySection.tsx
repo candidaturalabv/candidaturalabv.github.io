@@ -1,0 +1,28 @@
+import { useLanguage } from '@/contexts/LanguageContext';
+import { translations } from '@/lib/i18n';
+import { Shield } from 'lucide-react';
+
+const AdvisorySection = () => {
+  const { lang } = useLanguage();
+  const t = translations.advisory;
+
+  return (
+    <section className="py-20 bg-card">
+      <div className="container mx-auto px-4 max-w-4xl">
+        <div className="flex items-center gap-4 mb-3">
+          <Shield className="text-primary" size={36} />
+          <h2 className="section-title text-foreground">{t.title[lang]}</h2>
+        </div>
+        <div className="section-divider mb-8" />
+        <p className="text-lg leading-relaxed text-foreground/90 mb-6">
+          {t.description[lang]}
+        </p>
+        <p className="text-primary font-semibold text-lg italic">
+          {t.cta[lang]}
+        </p>
+      </div>
+    </section>
+  );
+};
+
+export default AdvisorySection;
