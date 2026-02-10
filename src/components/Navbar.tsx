@@ -48,10 +48,23 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile toggle */}
-        <button onClick={() => setOpen(!open)} className="md:hidden text-primary-foreground">
-          {open ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* Mobile: lang selector + toggle */}
+        <div className="md:hidden flex items-center gap-2">
+          <div className="flex gap-1 border border-border rounded-md overflow-hidden">
+            {(["es", "eu", "en"] as Language[]).map((l) => (
+              <button
+                key={l}
+                onClick={() => setLang(l)}
+                className={`px-2 py-1 text-xs font-bold transition-colors ${lang === l ? "bg-primary text-primary-foreground" : "text-secondary-foreground/70 hover:text-primary-foreground"}`}
+              >
+                {langLabels[l]}
+              </button>
+            ))}
+          </div>
+          <button onClick={() => setOpen(!open)} className="text-primary-foreground">
+            {open ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}
@@ -67,20 +80,6 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <div className="flex gap-1 mt-3">
-            {(["es", "eu", "en"] as Language[]).map((l) => (
-              <button
-                key={l}
-                onClick={() => {
-                  setLang(l);
-                  setOpen(false);
-                }}
-                className={`px-3 py-1 text-xs font-bold rounded ${lang === l ? "bg-primary text-primary-foreground" : "text-secondary-foreground/70"}`}
-              >
-                {langLabels[l]}
-              </button>
-            ))}
-          </div>
         </div>
       )}
     </nav>
