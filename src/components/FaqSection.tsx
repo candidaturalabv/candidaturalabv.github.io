@@ -18,8 +18,10 @@ const FaqSection = () => {
               <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary py-5">
                 {item.q[lang]}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
-                {item.a[lang]}
+              <AccordionContent className="text-muted-foreground pb-5 leading-relaxed space-y-3">
+                {item.a[lang].split('\n\n').map((paragraph, j) => (
+                  <p key={j}>{paragraph}</p>
+                ))}
               </AccordionContent>
             </AccordionItem>
           ))}
