@@ -2,9 +2,14 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/lib/i18n';
 import { Shield } from 'lucide-react';
 
+const EMAIL = 'candidaturalabvicomtech@gmail.com';
+
 const AdvisorySection = () => {
   const { lang } = useLanguage();
   const t = translations.advisory;
+
+  const ctaText = t.cta[lang];
+  const parts = ctaText.split(EMAIL);
 
   return (
     <section className="py-20 bg-card">
@@ -18,7 +23,9 @@ const AdvisorySection = () => {
           {t.description[lang]}
         </p>
         <p className="text-primary font-semibold text-lg italic">
-          {t.cta[lang]}
+          {parts[0]}
+          <a href={`mailto:${EMAIL}`} className="underline hover:text-primary/80">{EMAIL}</a>
+          {parts[1] || ''}
         </p>
       </div>
     </section>
