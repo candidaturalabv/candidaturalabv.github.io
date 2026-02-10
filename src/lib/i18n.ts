@@ -218,20 +218,71 @@ export const translations = {
   },
 } as const;
 
-export const candidateNames = [
-  "Felipe Mogollón",
-  "Luis Unzueta",
-  "Dorleta García",
-  "Javier Franco",
-  "Harritxu Gete",
-  "Mikel Hernández",
-  "Markel Flores",
-  "Javier Calle",
-  "Eduardo Alonso",
-  "Beñat Zabala",
-  "David Ponce",
-  "Rubén Naranjo",
-  "Iñigo Tamayo",
-  "Ainara Escribano",
-  "Enrique Shinohara",
+export interface Candidate {
+  name: string;
+  group: string;
+  photo?: string;
+}
+
+export interface CandidateDivision {
+  division: Record<Language, string> | string;
+  candidates: Candidate[];
+}
+
+export const candidatesByDivision: CandidateDivision[] = [
+  {
+    division: "DI24",
+    candidates: [
+      { name: "Luis Unzueta", group: "G1", photo: "lunzueta" },
+      { name: "Javi Calle", group: "G3", photo: "jcalle" },
+      { name: "Ainara Escribano", group: "G4", photo: "aescribano" },
+      { name: "Enrique Shinohara", group: "G4", photo: "eyshinohara" },
+    ],
+  },
+  {
+    division: "DI13",
+    candidates: [
+      { name: "Javier Franco", group: "G3", photo: "jfranco" },
+      { name: "Markel Flores", group: "S3", photo: "mflores" },
+    ],
+  },
+  {
+    division: "DI02",
+    candidates: [
+      { name: "Mikel Hernández", group: "G3", photo: "mhernandez" },
+      { name: "Eduardo Alonso", group: "G3", photo: "ealonso" },
+    ],
+  },
+  {
+    division: "DI01",
+    candidates: [
+      { name: "Harritxu Gete", group: "G3", photo: "hgete" },
+      { name: "David Ponce", group: "G3", photo: "adponce" },
+    ],
+  },
+  {
+    division: "DI12",
+    candidates: [
+      { name: "Felipe Mogollón", group: "S2", photo: "fmogollon" },
+      { name: "Íñigo Tamayo", group: "S2", photo: "itamayo" },
+    ],
+  },
+  {
+    division: "DI21",
+    candidates: [
+      { name: "Rubén Naranjo", group: "G3", photo: "rnaranjo" },
+    ],
+  },
+  {
+    division: { es: "Comunicación externa", eu: "Kanpo komunikazioa", en: "External Communication" },
+    candidates: [
+      { name: "Beñat Zabala", group: "G3", photo: "bzabala" },
+    ],
+  },
+  {
+    division: { es: "Proyectos Internacionales", eu: "Nazioarteko proiektuak", en: "International Projects" },
+    candidates: [
+      { name: "Dorleta García", group: "S3", photo: "dgarcia" },
+    ],
+  },
 ];
