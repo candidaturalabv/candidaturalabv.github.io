@@ -14,7 +14,7 @@ const Navbar = () => {
   const links = [
     { href: "#about", label: t.about[lang] },
     { href: "#concerns", label: t.concerns[lang] },
-    { href: "#blog", label: t.blog[lang] },
+    
     { href: "#faq", label: t.faq[lang] },
     { href: "#candidates", label: t.candidates[lang] },
   ];
