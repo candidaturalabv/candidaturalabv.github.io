@@ -55,9 +55,9 @@ export const translations = {
       en: "Our list has the external legal backing of the LAB union, which allows us to act with complete independence and have access to specialized legal advice. This guarantees support and security in all processes, as well as training and expert guidance in labor negotiations, defending rights, and conflict resolution, reinforcing our ability to represent workers in a solid and responsible manner.",
     },
     cta: {
-      es: "Te animamos a acercarte y compartir cualquier duda o sugerencia: estamos aquí para escucharte.",
-      eu: "Edozein zalantza edo iradokizun partekatzera animatzen zaitugu: zu entzuteko gaude hemen.",
-      en: "We encourage you to come and share any questions or suggestions you may have: we are here to listen to you.",
+      es: "Te animamos a acercarte y compartir cualquier duda o sugerencia: estamos aquí para escucharte. Escríbenos a candidaturalabvicomtech@gmail.com",
+      eu: "Edozein zalantza edo iradokizun partekatzera animatzen zaitugu: zu entzuteko gaude hemen. Idatzi iezaguzu candidaturalabvicomtech@gmail.com helbidera.",
+      en: "We encourage you to come and share any questions or suggestions you may have: we are here to listen to you. Write to us at candidaturalabvicomtech@gmail.com",
     },
   },
   candidates: {
