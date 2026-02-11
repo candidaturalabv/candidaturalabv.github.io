@@ -3,7 +3,7 @@ import { translations } from '@/lib/i18n';
 import { Shield } from 'lucide-react';
 
 const EMAIL = 'candidaturalabvicomtech@gmail.com';
-const TELEGRAM_URL = 'https://t.me/boost?c=3827610795';
+const TELEGRAM_URL = 'https://t.me/+3Daj16NC3iphM2Q0';
 
 const telegramTexts = {
   es: 'Únete a nuestro canal de Telegram',
