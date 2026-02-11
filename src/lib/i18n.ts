@@ -241,7 +241,7 @@ export const candidatesByDivision: CandidateDivision[] = [
     ],
   },
   {
-    division: "DI13",
+    division: "DI14",
     candidates: [
       { name: "Javier Franco", group: "G3", photo: "jfranco" },
       { name: "Markel Flores", group: "S3", photo: "mflores" },
