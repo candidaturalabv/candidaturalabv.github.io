@@ -7,6 +7,7 @@ export const translations = {
     concerns: { es: "Temas", eu: "Gaiak", en: "Topics" },
     blog: { es: "Blog", eu: "Bloga", en: "Blog" },
     faq: { es: "FAQ", eu: "FAQ", en: "FAQ" },
+    program: { es: "Programa", eu: "Programa", en: "Program" },
     candidates: { es: "Candidatos", eu: "Hautagaiak", en: "Candidates" },
   },
   hero: {
