@@ -13,7 +13,6 @@ import EntryPopup from '@/components/EntryPopup';
 const Index = () => {
   return (
     <LanguageProvider>
-      <EntryPopup />
       <Navbar />
       <HeroSection />
       <AboutSection />
